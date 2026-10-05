@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movies Grid</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #ffffff;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            max-width: 900px;
+            width: 100%;
+        }
+
+        .card {
+            display: flex;
+            border: 1px solid #f2cece;
+            background-color: #ffffff;
+            overflow: hidden;
+        }
+
+        .card-img {
+            width: 140px;
+            height: 170px;
+            object-fit: cover;
+            flex-shrink: 0;
+        }
+
+        .card-content {
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            gap: 15px;
+        }
+
+        .card-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #000000;
+        }
+
+        .release-date {
+            font-size: 14px;
+            color: #333333;
+        }
+
+        .btn-book {
+            background-color: #ff3366;
+            color: #ffffff;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-family: Arial, sans-serif;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1536440136628-849c177e76a1?auto=format&fit=crop&w=300&q=80" alt="ET">
+            <div class="card-content">
+                <h3 class="card-title">ET (2022)</h3>
+                <p class="release-date">Releasing on 11 Mar, 2022</p>
+                <button class="btn-book">Book tickets</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=300&q=80" alt="Jhund">
+            <div class="card-content">
+                <h3 class="card-title">Jhund</h3>
+                <p class="release-date">Releasing on 11 Mar, 2022</p>
+                <button class="btn-book">Book tickets</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?auto=format&fit=crop&w=300&q=80" alt="Gangubai Kathiawadi">
+            <div class="card-content">
+                <h3 class="card-title">Gangubai Kathiawadi</h3>
+                <p class="release-date">Releasing on 11 Mar, 2022</p>
+                <button class="btn-book">Book tickets</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREfSJmEOC7B5Zj8I6vs7u-tLpW1tA8QdGyAAJ3X8i5gA&s=10" alt="Radhe Shyam">
+            <div class="card-content">
+                <h3 class="card-title">Radhe Shyam</h3>
+                <p class="release-date">Releasing on 11 Mar, 2022</p>
+                <button class="btn-book">Book tickets</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&w=300&q=80" alt="Uncharted">
+            <div class="card-content">
+                <h3 class="card-title">Uncharted</h3>
+                <p class="release-date">Releasing on 11 Mar, 2022</p>
+                <button class="btn-book">Book tickets</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <img class="card-img" src="https://images.unsplash.com/photo-1509198397868-475647b2a1e5?auto=format&fit=crop&w=300&q=80" alt="The Batman">
+            <div class="card-content">
+                <h3 class="card-title">The Batman</h3>
+                <p class="release-date">Releasing on 11 Mar, 2022</p>
+                <button class="btn-book">Book tickets</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
