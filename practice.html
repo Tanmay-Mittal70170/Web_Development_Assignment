@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+
+    <!-- Transition and Animations in Css: -->
+    
+    <style>
+
+        #box{
+            width: 200px;
+            height:200px;
+            border:2px solid teal;
+            background-color:yellow;
+            transition: all 8s 1s ease; 
+            /*ease-in slow start and fast end*/
+            /*ease-out fast start slow end*/
+            /*ease is the mixture of fast and slow*/ 
+        }
+
+        #box:hover{
+
+            background-color: tomato;
+            width: 800px;
+            height:500px;
+            border:8px solid green;
+            
+
+        }
+
+
+    </style>
+
+
+</head>
+<body>
+
+    <div id="box"></div>
+    
+</body>
+</html>
