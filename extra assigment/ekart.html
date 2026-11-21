@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ekart</title>
+
+    <style>
+        header {
+            display: flex;
+            gap: 15px;
+        }
+
+        #Minutes, #flipkart, #Travel {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            width: 150px;
+            height: 50px;
+            border: none;
+            border-radius: 15px;
+            cursor: pointer;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 15px;
+        }
+
+        #flipkart {
+            background-color: #ffe80c;
+        }
+
+        #Minutes, #Travel {
+            background-color: #f0f0f0;
+        }
+
+        #flipkart img {
+            width: 35px;
+            height: 35px;
+            object-fit: contain;
+        }
+
+        #Minutes img, #Travel > img {
+            width: 30px;
+            height: 40px;
+            object-fit: contain;
+        }
+
+        #search {
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        #search div:nth-child(1) {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            width: 860px;
+            height: 35px;
+            background-color: white;
+            border: 2px solid #2ea1ff;
+            border-radius: 13px;
+            padding: 5px 12px;
+        }
+
+        #search div:nth-child(2) {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        #search > div:nth-child(1) img{
+            width: 22px;
+            height: 22px;
+            object-fit: contain;
+        }
+        #box {
+            display: flex;
+            height: 30px;
+            width: 300px;
+            border: none;
+            outline: none;
+            font-size: 17px;
+        }
+
+        #account {
+            border: none;
+            outline: none;
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            background: transparent;
+            cursor: pointer;
+        }
+
+        #search div:nth-child(2) img{
+            width: 15px;
+            height: 15px;
+            object-fit: contain;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div id="flipkart">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQVcYqQzzHcKoyGQCsgAtj_HSul1RVnA6hS8W4NqQDtAA&s=10" alt="Flipkart">
+            FlipKart
+        </div>
+
+        <button id="Minutes">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/28/22/image/716adbc920ad1eba.png?q=80" alt="Flipkart Minutes">
+            Minutes
+        </button>
+
+        <button id="Travel">
+            <img src="https://rukminim2.flixcart.com/fk-p-flap/29/22/image/7ab4040af860941d.png?q=80" alt="Travel">
+            Travel
+        </button>
+    </header>
+
+    <br>
+
+    <nav id="search">
+        <div>
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0K1d6cAhLmt3XtN7ZAo-BtO76AR6DHP8yUSasfRcIqw&s=10" alt="Search">
+            <input type="text" id="box" placeholder="Search For Products, Brands and More">
+        </div>
+
+
+        <div>
+            <img src="https://cdn-icons-png.flaticon.com/128/747/747376.png" alt="Account">
+            <select name="Account" id="account">
+                <option value="Account">Account</option>
+                <option value="Profile">My Profile</option>
+                <option value="Orders">Orders</option>
+                <option value="Logout">Logout</option>
+            </select>
+        </div>
+    </nav>
+
+</body>
+</html>
